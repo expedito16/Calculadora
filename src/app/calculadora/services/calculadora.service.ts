@@ -16,7 +16,6 @@ export class CalculadoraService {
   constructor() { }
 
   calcular(valor1: number, valor2: number, operacao: string): any {
-    debugger
     let resultado: number; //Armazena o resultado da operação.
 
     switch (operacao) {
