@@ -16,6 +16,7 @@ export class CalculadoraService {
   constructor() { }
 
   calcular(valor1: number, valor2: number, operacao: string): any {
+    debugger
     let resultado: number; //Armazena o resultado da operação.
 
     switch (operacao) {
@@ -29,10 +30,12 @@ export class CalculadoraService {
         resultado = valor1 * valor2;
       break;
       case CalculadoraService.divisao:
-        resultado = valor1 * valor2;
+        resultado = valor1 / valor2;
       break;
       default:
         resultado = 0;
     }
+
+    return resultado;
   }
 }
